@@ -325,6 +325,8 @@ video {
     overflow: hidden;
 
     &-img {
+      object-fit: cover;
+      object-position: center;
       transition: $transition-400;
     }
 
@@ -393,9 +395,7 @@ video {
     transition: $transition-400;
 
     &:hover {
-      &.features__content {
-        background-color: $yellow-color;
-      }
+      background-color: $yellow-color;
 
       & .features__content-number,
       & .features__content-title,
