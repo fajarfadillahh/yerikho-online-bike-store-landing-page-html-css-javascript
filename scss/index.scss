@@ -231,6 +231,7 @@ video {
   &__bg {
     position: relative;
     height: calc(80vh - $header-height);
+    display: grid;
   }
 
   &__img {
@@ -247,11 +248,8 @@ video {
     position: relative;
     height: 100%;
     display: grid;
-    align-content: center;
-  }
-
-  &__data {
     justify-self: center;
+    align-content: center;
   }
 
   &__title {
@@ -290,6 +288,48 @@ video {
       border-radius: 50%;
       font-size: 1.5rem;
       color: $yellow-color;
+    }
+  }
+}
+
+// ===== ABOUT SECTION =====
+.about {
+  position: relative;
+  display: grid;
+  gap: 4rem;
+
+  &__container {
+    justify-self: center;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: $margin-2;
+
+    &-yellow {
+      color: $yellow-color;
+    }
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: center;
+  }
+
+  &__content {
+    height: 250px;
+    overflow: hidden;
+
+    &-img {
+      transition: $transition-400;
+    }
+
+    &:hover .about__content-img {
+      transform: scale(1.1);
     }
   }
 }
