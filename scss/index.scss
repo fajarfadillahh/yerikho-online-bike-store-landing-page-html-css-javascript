@@ -375,3 +375,56 @@ video {
     cursor: pointer;
   }
 }
+
+// ===== FEATURES SECTION =====
+.features {
+  padding-bottom: 4rem;
+
+  &__group {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  &__content {
+    padding: 3rem;
+    background-color: #16191f;
+    transition: $transition-400;
+
+    &:hover {
+      &.features__content {
+        background-color: $yellow-color;
+      }
+
+      & .features__content-number,
+      & .features__content-title,
+      & .features__content-text {
+        color: $black-color;
+      }
+    }
+
+    &-number {
+      font-size: 20px;
+      font-weight: $font-bold;
+      color: $yellow-color;
+      margin-bottom: 0.5rem;
+      transition: $transition-400;
+    }
+
+    &-title {
+      font-size: 24px;
+      font-weight: $font-bold;
+      color: $white-color;
+      margin-bottom: $margin-1;
+      transition: $transition-400;
+    }
+
+    &-text {
+      font-size: 16px;
+      color: $grey-color;
+      line-height: $leading-text;
+      transition: $transition-400;
+    }
+  }
+}
