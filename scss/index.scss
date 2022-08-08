@@ -1,0 +1,142 @@
+// ===== FONT GOOGLE =====
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+// ===== VARIABLE CSS CLASS =====
+// header height
+$header-height: 6rem;
+
+// color palette
+$black-color: #010204;
+$grey-color: #7b7e88;
+$white-color: #ffffff;
+$yellow-color: #f5ff26;
+
+// font body
+$font-body: "Lato", sans-serif;
+
+// font weight
+$font-reguler: 400;
+$font-bold: 700;
+$font-extrabold: 800;
+
+// margin
+$margin-0-5: 0.5rem;
+$margin-1: 1rem;
+$margin-1-5: 1.5rem;
+$margin-2: 2rem;
+$margin-2-5: 2.5rem;
+$margin-3: 3rem;
+$margin-3-5: 3.5rem;
+$margin-4: 4rem;
+
+// z-index
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// transition
+$transition-400: 0.4s;
+
+// line-height
+$leading-title: 100%;
+$leading-text: 160%;
+
+// ===== RESET & BASE =====
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-top: $header-height;
+  font-family: $font-body;
+  font-weight: $font-reguler;
+  background-color: $black-color;
+  color: $white-color;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+input,
+button {
+  font-family: $font-body;
+  font-weight: $font-bold;
+  outline: none;
+  border: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+// ===== REUSABLE CSS CLASS =====
+.section {
+  padding: 8rem 0 4rem;
+
+  &-subtitle {
+    font-size: 16px;
+    font-weight: $font-bold;
+    color: $grey-color;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    line-height: $leading-text;
+    margin-bottom: $margin-1;
+  }
+
+  &-title {
+    font-size: 48px;
+    font-weight: $font-bold;
+    color: $white-color;
+    line-height: $leading-title;
+  }
+
+  &-text {
+    font-size: 16px;
+    color: $grey-color;
+    line-height: $leading-text;
+  }
+}
+
+.button {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  background-color: $yellow-color;
+  border-radius: 100rem;
+  font-size: 16px;
+  font-weight: $font-bold;
+  color: $black-color;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1120px;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+
+  &-gap {
+    gap: 4rem;
+  }
+}
+
+.main {
+  overflow: hidden;
+}
