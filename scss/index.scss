@@ -591,6 +591,11 @@ video {
     display: grid;
     gap: 3rem;
 
+    &-data,
+    &-img {
+      justify-self: center;
+    }
+
     &-text {
       font-size: 20px;
       font-weight: $font-bold;
@@ -637,7 +642,7 @@ video {
 
   &__group {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
   }
 
@@ -726,5 +731,27 @@ video {
         text-decoration: underline;
       }
     }
+  }
+}
+
+// ===== MEDIA QUERIES ======
+// width 480px
+@media screen and (min-width: 480px) {
+  .home__container,
+  .about__container,
+  .products__data,
+  .faq__data,
+  .discover__data,
+  .discover__content-data {
+    width: 400px;
+  }
+
+  .products__group,
+  .features__group {
+    grid-template-columns: 0.9fr;
+  }
+
+  .discover__content-img {
+    width: 400px;
   }
 }
