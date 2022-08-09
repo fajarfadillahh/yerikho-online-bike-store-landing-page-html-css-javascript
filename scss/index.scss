@@ -248,7 +248,6 @@ video {
     position: relative;
     height: 100%;
     display: grid;
-    justify-self: center;
     align-content: center;
   }
 
@@ -737,7 +736,6 @@ video {
 // ===== MEDIA QUERIES ======
 // width 480px
 @media screen and (min-width: 480px) {
-  .home__container,
   .about__container,
   .products__data,
   .faq__data,
@@ -762,7 +760,6 @@ video {
     font-size: 56px;
   }
 
-  .home__container,
   .about__container,
   .products__data,
   .faq__data,
@@ -804,6 +801,70 @@ video {
 
     &__toggle {
       display: none;
+    }
+  }
+}
+
+// width 968px
+@media screen and (min-width: 968px) {
+  .section-title {
+    font-size: 72px;
+  }
+
+  .header {
+    &__container {
+      position: relative;
+    }
+
+    &__list {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      gap: 2rem;
+    }
+  }
+
+  .about__container,
+  .products__data,
+  .discover__data {
+    width: 650px;
+  }
+
+  .video__data {
+    margin-top: 6rem;
+  }
+
+  .features__group,
+  .products__group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq__accordion {
+    width: 800px;
+    justify-self: center;
+
+    &-data {
+      gap: 5rem;
+    }
+
+    &-text {
+      width: 500px;
+      padding-left: 7rem;
+    }
+  }
+
+  .discover__content {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    &-data,
+    &-img {
+      width: auto;
+      justify-self: flex-start;
+    }
+
+    &-text {
+      width: 400px;
     }
   }
 }
