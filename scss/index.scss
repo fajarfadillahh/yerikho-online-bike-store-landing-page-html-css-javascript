@@ -755,3 +755,32 @@ video {
     width: 400px;
   }
 }
+
+// width 640px
+@media screen and (min-width: 640px) {
+  .section-title {
+    font-size: 56px;
+  }
+
+  .home__container,
+  .about__container,
+  .products__data,
+  .faq__data,
+  .discover__data,
+  .discover__content-data {
+    width: 500px;
+  }
+
+  .about__text {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .products__content-wrapper {
+    height: 350px;
+  }
+
+  .discover__content-img {
+    width: 500px;
+  }
+}
