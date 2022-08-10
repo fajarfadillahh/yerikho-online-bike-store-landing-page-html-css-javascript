@@ -873,3 +873,88 @@ video {
     }
   }
 }
+
+// width 1120px
+@media screen and (min-width: 1120px) {
+  .home {
+    &__wrapper {
+      height: 100vh;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+
+    &__title {
+      font-size: 108px;
+    }
+  }
+
+  .about {
+    &__container {
+      width: 900px;
+    }
+
+    &__title {
+      font-size: 108px;
+    }
+
+    &__text {
+      font-size: 20px;
+      width: 500px;
+    }
+
+    &__content {
+      height: 350px;
+    }
+  }
+
+  .section-subtitle,
+  .features__content-text {
+    font-size: 20px;
+  }
+
+  .features__content-title,
+  .products__content-title {
+    font-size: 32px;
+  }
+
+  .faq__accordion {
+    width: 930px;
+
+    &-number {
+      font-size: 48px;
+    }
+
+    &-title {
+      font-size: 32px;
+    }
+
+    &-text {
+      width: 700px;
+      font-size: 20px;
+      padding-left: 8rem;
+    }
+  }
+
+  .discover__content-text {
+    width: 500px;
+    font-size: 32px;
+  }
+
+  .footer {
+    &__group {
+      flex-direction: row;
+      justify-content: space-between;
+      justify-items: center;
+      align-items: flex-start;
+    }
+
+    &__copy {
+      text-align: left;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
