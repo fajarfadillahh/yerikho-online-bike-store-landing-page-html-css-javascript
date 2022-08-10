@@ -985,3 +985,9 @@ video {
     }
   }
 }
+
+// ===== ::SELECTION =====
+::selection {
+  background-color: rgba($color: #f5ff26, $alpha: 0.8);
+  color: $black-color;
+}
