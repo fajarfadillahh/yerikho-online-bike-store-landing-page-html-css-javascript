@@ -991,3 +991,18 @@ video {
   background-color: rgba($color: #f5ff26, $alpha: 0.8);
   color: $black-color;
 }
+
+// ===== ::-WEBKIT-SCROLLBAR =====
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba($color: #ffffff, $alpha: 0.05);
+
+  &-thumb {
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
+    border-radius: 10rem;
+
+    &:hover {
+      background-color: rgba($color: #ffffff, $alpha: 0.15);
+    }
+  }
+}
