@@ -733,6 +733,33 @@ video {
   }
 }
 
+// ===== SCROLLUP SECTION ======
+.scrollup {
+  position: fixed;
+  right: 1.5rem;
+  bottom: -100%;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: $yellow-color;
+  font-size: 1.5rem;
+  color: $black-color;
+  transition: $transition-400;
+
+  &:hover {
+    background-color: #16191f;
+    color: $white-color;
+  }
+
+  // scrollup action
+  &.scroll-action {
+    bottom: 3rem;
+  }
+}
+
 // ===== MEDIA QUERIES ======
 // width 480px
 @media screen and (min-width: 480px) {
