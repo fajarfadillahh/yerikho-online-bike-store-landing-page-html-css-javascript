@@ -824,6 +824,11 @@ video {
     }
   }
 
+  .home__buttons {
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+  }
+
   .about__container,
   .products__data,
   .discover__data {
